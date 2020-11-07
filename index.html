@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tives To do list</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="TodoApp">
+        <header>
+            <img src="assets/logo.svg">
+        </header>
+
+        <h1 class="todo-title">Lista de Tarefas </h1>
+
+        <section class="todo-input-section">
+            <input type="text" id="TodoInput" />
+            <button id="AddTodoButton" class="orange-background" onclick="handleAddTodo()">
+                <img src="assets/plus.svg">
+            </button>
+        </section>
+
+        <section class="todo-list-section">
+            <p id="TodoCounterText">Você tem x tarefas pendentes</p>
+            <ul id="TodoList">
+                
+            </ul>
+            <p id="ClearAllText" onclick="handleDeleteAllTodos()">Limpar  a lista toda</p>
+        </section>
+        <section class="logolista">
+
+            <img class="img" src="assets/tll.png" >
+
+        </section>
+    </div>
+    
+    <script src="js/todoItemTemplate.js"></script>
+    <script src="js/persistency.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
